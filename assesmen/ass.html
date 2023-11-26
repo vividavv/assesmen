@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesmen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .menu {
+        overflow-y: auto;
+        max-height: 300px;
+    }
+    
+    .total {
+        color: white;
+    }
+</style>
+<body>
+    <div class="bg-light">
+        <!-- nav tulisan atas -->
+        <nav class="p-3 mb-2 bg-primary text-white">
+            <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Starbhak Mart</span>
+            </div>
+        </nav>
+        <!-- end nav -->
+        
+        <!-- kiri -->
+        <div class="row g-0 text-center">
+            <div class="col-6 col-md-4">
+                <select class="form-select bg-primary text-white col-md-12 mb-2" aria-label="Default select example" style="text-align: center;"> 
+                    <option selected>Take Away</option> 
+                    <option value="1">Delivery</option> 
+                </select>
+                <nav class="navbar bg-primary text-white" style="justify-content: center; ">
+                    <div>
+                        <div class="container-fluid">
+                            <img src="img/user.png" width="30" height="24" >
+                            Mang.Jay
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="menu">
+                    <div class="overflow-y-scroll mb-2" style="height: 300px;">
+                        <ul class="list-group">
+                        
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="vstack gap-2 col-md-13" style="text-align: left; ">
+                    <div class="p-2 mb-2 bg-white text-dark">Before Tax:  <span class="awal"></span></div>
+                    <div class="p-2 mb-2 bg-white text-dark">Tax : <span class="pajak"></span></div>
+                    <div class="p-2 mb-2 bg-primary text-white">Total Amount :<span class="total"></span></div>
+                </div>
+            </div>
+            <!-- end kiri -->
+
+            <!-- kanan -->
+            <div class="col-sm-6 col-md-8">
+                <!-- icon atas -->
+                <nav class="navbar bg-white text-dark">
+                    <div class="container-fluid">
+                    <span class="navbar-text">Item List</span>
+                        <div class="ml-auto">
+                            <button class="btn btn-link">
+                                <img src="img/search.svg" width="20" height="24">
+                            </button>
+                            <button class="btn btn-link">
+                                <img src="img/more-vertical.svg"width="20" height="24">
+                            </button>
+                            <button class="btn btn-link">
+                                <img src="img/up-and-down-arrow.png"width="20" height="24">
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <!-- end icon -->
+                <!-- isi -->
+                <div class="row row-cols-1 row-cols-md-5 g-2">
+                    <div id="makanan">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/burger.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">burger</h6>
+                                <p class="card-text">Rp. <span>50000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="makanan">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/taco.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">taco</h6>
+                                <p class="card-text">Rp. <span>70000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="minuman">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/manga.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">milkshake</h6>
+                                <p class="card-text">Rp. <span>25000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="makanan">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/makaroni.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">makaroni</h6>
+                                <p class="card-text">Rp. <span>60000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="minuman">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/milkshake.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">milkshake</h6>
+                                <p class="card-text">Rp. <span>30000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="makanan">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/spageti.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">spageti</h6>
+                                <p class="card-text">Rp. <span>80000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="makanan">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/kentang goreng.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">kentang goreng</h6>
+                                <p class="card-text">Rp. <span>60000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="makanan">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/three burger.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">threepln burger</h6>
+                                <p class="card-text">Rp. <span>90000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="minuman">
+                        <div class="col">
+                            <div class="card h-60">
+                                <img src="img/dalgona.jpeg" class="card-img-top"width="20" height="140">
+                                <div class="card-body">
+                                <h6 class="card-title">dalgona</h6>
+                                <p class="card-text">Rp. <span>50000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                </div>
+            </div>
+            <!-- end kanan -->
+        </div>
+    </div>
+
+    <nav class="bg-white">
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary" onclick="processPayment()">
+                <img src="img/floppy-disk.png" width="20" height="24">
+                Payment
+                {CTRL + P}
+            </button>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+        function processPayment() {
+            // Call your existing hitung function
+            hitung();
+
+            // You can add more logic here for the payment process
+            console.log("Payment processed. Additional logic can be added here.");
+        }
+    </script>
+</body>
+</html>
